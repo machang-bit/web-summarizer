@@ -60,7 +60,11 @@ if submit:
                 llm = get_llm()
                 summary = summarize(chunks, llm, chain_type)
 
-            st.success(f"摘要生成完成！共抓取 {len(docs)} 个文档、切分为 {len(chunks)} 块。")
+            char_count = sum(len(d.page_content) for d in docs)
+            st.success(
+                f"摘要生成完成！正文 {char_count} 字，切分为 {len(chunks)} 块，"
+                f"使用 {chain_type} 模式。"
+            )
             st.markdown("### ✨ 核心摘要")
             st.markdown(summary)
             with st.expander("查看抓取到的正文（前 800 字）"):
