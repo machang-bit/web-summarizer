@@ -1,5 +1,5 @@
 streamlit>=1.32
-langchain>=0.2
+langchain>=0.1,<0.2
 langchain-community>=0.2
 langchain-openai>=0.1
 langchain-ollama>=0.1
