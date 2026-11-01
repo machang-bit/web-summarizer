@@ -1,10 +1,8 @@
 streamlit>=1.32
-langchain>=0.1,<0.2
-langchain-community>=0.2
-langchain-openai>=0.1
-langchain-ollama>=0.1
-langchain-text-splitters>=0.2
-beautifulsoup4>=4.12
-python-dotenv>=1.0
-requests>=2.31
+langchain==0.1.20
+langchain-community==0.0.38
+langchain-openai
+beautifulsoup4
+python-dotenv
+requests
 zhipuai>=2.0
